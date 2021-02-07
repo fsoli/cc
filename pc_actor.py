@@ -1,6 +1,6 @@
 import pykka
 import tsp
-
+import numpy as np
 
 
 class pc_actor(pykka.ThreadingActor):
@@ -69,13 +69,24 @@ class pc_actor(pykka.ThreadingActor):
             if(self.neighbors[1]!=-1):
                 self.neighbors[1].ask({'message': 'l_suggest','suggest':[self.candidate[1],self.candidate2[1]]})
         if message['message'] == 'tsp_betweend':
-            if self.neighbors[2]!=-1 or self.neighbors[2]!=-1:
+            if self.neighbors[1]==-1 and self.neighbors[2]!=-1:
                 self.neighbors[2].ask({'message': 'd_suggest','suggest':[self.candidate[2],self.candidate2[2]]})
 
 
         if message['message'] == 'l_suggest':
-            self.starter_actor_address.tell({'message': 'phas1','my_suggest':[self.candidate[3],self.candidate2[3]], 'my_neigbor_suggest': message['suggest']})
-        if message['message'] == 'd_suggest':
+            edge11=np.sqrt((self.candidate[3][0]-message['suggest'][0][0])**2+(self.candidate[3][1]-message['suggest'][0][1])**2)
+            edge21=np.sqrt((self.candidate2[3][0]-message['suggest'][1][0])**2+(self.candidate2[3][1]-message['suggest'][1][1])**2)
 
+            edge12=np.sqrt((self.candidate[3][0] - message['suggest'][1][0]) ** 2+(self.candidate[3][1] - message['suggest'][1][1]) ** 2)
+            edge22=np.sqrt((self.candidate2[3][0] - message['suggest'][0][0]) ** 2+(self.candidate2[3][1] - message['suggest'][0][1]) ** 2)
+
+
+            if edge11+edge21>edge22+edge12:
+                self.starter_actor_address.tell({'message': 'phas1','my_suggest':[self.candidate[3],self.candidate2[3]], 'my_neigbor_suggest': message['suggest']})
+            else:
+                self.starter_actor_address.tell({'message': 'phas1', 'my_suggest': [self.candidate2[3], self.candidate[3]],
+                                                 'my_neigbor_suggest': message['suggest']})
+
+        if message['message'] == 'd_suggest':
                 self.starter_actor_address.tell({'message': 'phas2','my_suggest':[self.candidate[0],self.candidate2[0]], 'my_neigbor_suggest': message['suggest']})
 
