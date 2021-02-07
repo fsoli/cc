@@ -257,7 +257,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="57" />
     <option name="y" value="581" />
     <option name="width" value="1707" />
@@ -508,7 +508,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="581" width="1707" height="964" extended-state="0" />
+    <frame x="57" y="581" width="1707" height="964" extended-state="1" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19975713" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
