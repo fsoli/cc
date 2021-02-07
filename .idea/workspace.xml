@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6364bb5d-0c22-4f17-99ac-3447f9a24c59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Progfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +69,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Procfile" value="1" />
+          <entry key="Progfile" value="1" />
           <entry key="css" value="2" />
           <entry key="html" value="16" />
           <entry key="ini" value="1" />
@@ -80,12 +83,15 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="16" />
           <entry key="Ini" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="212" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Procfile" value="6" />
+          <entry key="Progfile" value="10" />
           <entry key="css" value="63" />
           <entry key="dummy" value="102" />
           <entry key="html" value="35" />
@@ -96,7 +102,7 @@
         <counts>
           <entry key="CSS" value="63" />
           <entry key="HTML" value="35" />
-          <entry key="PLAIN_TEXT" value="102" />
+          <entry key="PLAIN_TEXT" value="118" />
           <entry key="Python" value="9537" />
         </counts>
       </usages-collector>
@@ -117,11 +123,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/collector_actor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Progfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -182,8 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test3.py" />
-        <option value="$PROJECT_DIR$/test4.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/test6.py" />
         <option value="$PROJECT_DIR$/test5.py" />
@@ -233,6 +246,8 @@
         <option value="$PROJECT_DIR$/pc_actor.py" />
         <option value="D:/uni arshad/advanced network/New folder/9303113/BGPvsModel.py" />
         <option value="$PROJECT_DIR$/collector_actor.py" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/Progfile" />
       </list>
     </option>
   </component>
@@ -242,9 +257,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="175" />
-    <option name="y" value="275" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="57" />
+    <option name="y" value="581" />
     <option name="width" value="1707" />
     <option name="height" value="964" />
   </component>
@@ -260,11 +275,6 @@
             <path>
               <item name="tsp_distributed" type="b2602c69:ProjectViewProjectNode" />
               <item name="tsp_distributed" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsp_distributed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsp_distributed" type="462c0819:PsiDirectoryNode" />
-              <item name="python-getting-started" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -498,7 +508,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="175" y="275" width="1707" height="964" extended-state="1" />
+    <frame x="57" y="581" width="1707" height="964" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19975713" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -564,16 +574,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/main-test-main/test-graphic.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/main-test-main/test-graphic2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test-tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
@@ -867,10 +867,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/collector_actor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
